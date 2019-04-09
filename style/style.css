@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+}
+html {
+	width: 100%;
+	min-width: 65em;
+	font-size: 8px;
+}
+b{font-weight:bold;}
+.container {
+	max-width: 150em;
+	min-width: 65em;
+	margin: 0 auto;
+	padding: 0 2em;
+}
+.picture{
+	background-position: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.flex{display:flex;justify-content:center;align-items:center;}
+.clear{clear:both;}
+.border2{border: 2px solid #ffffff;}
+
+header {
+	width: 100%;
+	height: 21em;
+	background-color: #141414;
+}
+
+header .container {
+	padding-top: 2em;
+}
+
+header .logo {
+	background-image: url("http://loft139.uhomuho.beget.tech/pict/header/logo.png");
+	width: 28em;
+	height: 17em;
+	margin: 0 auto;
+}
+
+main {
+	width: 100%;
+	background-image: url("http://loft139.uhomuho.beget.tech/pict/main/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 60%; 
+}
+
+main .container {
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10em 2em; 
+}
+
+main .container .mini-container {
+	max-width: 57em;
+	height: 57em;
+	padding: 3em;
+	background-color: #141414;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+main .container .mini-container .box {
+	min-width: 51em;
+	min-height: 51em;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+
+main .container .mini-container > p {
+	display: inline-block;
+	padding: 0 0.25em;
+	margin: -0.75em;
+	color: #FFFFFF;
+	background-color: #141414;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+main .container .mini-container:hover .logo-container {
+	transform: translateY(-51em);
+	transition: transform .5s ease-in-out;
+}
+
+main .container .mini-container .border2 .logo-container {
+	position: absolute;
+	z-index: 3;
+	width: 51em;
+	height: 51em;
+	transition: transform .5s ease-in-out;
+}
+
+
+main .container .mini-container .border2 .logo-container .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 51em;
+	height: 51em;
+	background-color: #141414;
+}
+
+main .container .mini-container .border2 .text-container {
+	position: absolute;
+	z-index: 2;
+	padding: 5em 2em;
+}
+
+main .container .mini-container .border2 .text-container p {
+	color: #ffffff;
+	text-align: center;
+	font-size: 2.5em;
+	line-height: 1.25em;
+	user-select: none;
+}
+
+main .container .mini-container:last-of-type .border2 .text-container p {
+	line-height: 1.5em;
+}
+
+main .container .mini-container .border2 .text-container p a::after {
+	display: block;
+	content:"";
+	width: 0;
+	height: 0.1em;
+	background-color: #FFF;
+	transition: all .3s ease-in-out;
+}
+main .container .mini-container .border2 .text-container p a:hover {
+	text-decoration: none;
+}
+
+main .container .mini-container .border2 .text-container p a:hover::after {
+	width: 100%;
+	transition: all .3s ease-in-out;
+}
+
+main .container .mini-container .border2 .text-container p a {
+	display: inline-block;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+main .container .mini-container .border2 .text-container p b {
+	font-size: 1em;
+}
+
+main .container .mini-container .border2 .text-container .insta {
+	background-image: url('http://loft139.uhomuho.beget.tech/pict/main/icons/insta.png');
+	width: 6em;
+	height: 6em;
+	margin: 0.5em auto 0;
+}
+
+main .container .mini-container:first-of-type .box .logo {
+	background-image: url("http://loft139.uhomuho.beget.tech/pict/main/icons/delivery.png");
+	width: 40em;
+	height: 40em;
+	margin: 5em auto;
+	z-index: 4;
+}
+
+main .container .mini-container:last-of-type .box .logo {
+	background-image: url("http://loft139.uhomuho.beget.tech/pict/main/icons/autsorsing.png");
+	width: 35em;
+	height: 35em;
+	margin: 5em auto;
+	z-index: 4;
+}
+
+footer {
+	width: 100%;
+	background-color: #141414;
+	height: 20em;
+}
+
+footer .container.flex {
+	height: inherit;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .column-1 span {
+	font-size: 2em;
+	color:  #FFFFFF;
+}
+
+footer .column-2 {
+	text-align: center;
+}
+
+footer .column-2 span {
+	font-size: 2em;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+footer .column-2 span a {	
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+footer .column-3 .insta {
+	background-image: url('http://loft139.uhomuho.beget.tech/pict/main/icons/insta.png');
+	width: 7em;
+	height: 7em;
+	border-radius: 2em;	
+	background-color: #141414;
+	box-shadow: 0 0 25px #141414);
+	transition: all .3s ease-in-out;
+}
+
+footer .column-3 .insta:hover,
+footer .column-3 .insta:active {
+	background-color: transparent;
+	box-shadow: 0 0 25px rgba(255,255,255,0.4);
+	transition: all .3s ease-in-out;
+}
+
+.popup-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.8);
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-container .popup-content {
+	flex-direction: column;
+	justify-content: center;
+	width: 62.5em;
+	height: 30em;
+	background-color: #ffffff;
+	border-radius: 5em;
+}
+
+.popup-container .popup-content h2 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #141414;
+	padding-bottom: 3em;
+}
+
+.popup-container .popup-content span,
+.popup-container .popup-content a {
+	font-size: 3em;
+	font-weight: bold;
+	color: #141414;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.popup-container .popup-content .yes:hover span,
+.popup-container .popup-content .no:hover a,
+.popup-container .popup-content .yes:active span,
+.popup-container .popup-content .no:active a {
+	color: rgba(0,0,0,0.7);
+}
+
+.popup-container .popup-content span {
+	margin-right: 6em;
+}
+
+.popup-container .popup-content .yes {
+	float: left;
+}
+
+.popup-container .popup-content .no {
+	float: right;
+}
+
+@media screen and (max-width: 995px) {
+	main .container {
+		flex-direction: column;
+	}
+	main .home {
+		margin-bottom: 3em;
+	}	
+	html {
+		font-size: 12px;
+	}
+}
